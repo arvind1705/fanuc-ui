@@ -1,0 +1,77 @@
+{
+    "data": {
+        "heading": "Drilling",
+        "sub_heading": "Spindle Rotation",
+        "input_fields": [
+            {
+                "label": "Operation No",
+                "text": "operation_no",
+                "name": "operation_no",
+                "type": "number",
+                "required": true
+            },
+            {
+                "label": "Tool No",
+                "text": "tool_no",
+                "name": "tool_no",
+                "type": "number",
+                "required": true
+            },
+            {
+                "label": "Offset No",
+                "text": "offset_no",
+                "name": "offset_no",
+                "type": "number",
+                "required": true
+            },
+            {
+                "label": "RPM",
+                "text": "rpm",
+                "name": "rpm",
+                "type": "number",
+                "required": true
+            },
+            {
+                "label": "Feed",
+                "text": "feed",
+                "name": "feed",
+                "type": "number",
+                "required": true
+            }
+        ],
+        "sub_input_fields": [
+            {
+                "label": "Clockwise",
+                "text": "clockwise",
+                "name": "clockwise",
+                "type": "radiobox",
+                "required": false
+            },
+            {
+                "label": "Anti-Clockwise",
+                "text": "anti_lockwise",
+                "name": "anti_lockwise",
+                "type": "radiobox",
+                "required": false
+            }
+        ],
+        "image": {
+            "image_uri": "http://res.cloudinary.com/fanuc/image/upload/v1591757908/drilling.jpg",
+            "input_fields": [
+                {
+                    "label": "Drill",
+                    "text": "drill",
+                    "name": "drill",
+                    "type": "number",
+                    "required": true,
+                    "x": 300,
+                    "y": 430
+                }
+            ]
+        },
+        "note": [],
+        "additional_params": [
+            {}
+        ]
+    }
+}
