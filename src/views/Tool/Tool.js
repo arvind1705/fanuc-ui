@@ -90,7 +90,7 @@ export default class Tool extends Component {
                         <br/>
                     </div>
                     <div className="content">
-                        <div className="row">
+                        <div className="row justify-content-around">
                             <ToolInput input_fields={this.state.input_fields} setResult={this.setResult} height={this.state.image.dimensions.height} image={this.state.image} notes={this.state.notes}/>
                             <ToolResult result={this.state.result} />
                         </div>

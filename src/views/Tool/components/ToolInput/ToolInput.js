@@ -133,15 +133,24 @@ export default class ToolInput extends Component {
             position: "absolute",
             left: "320px",
             bottom: "100px",
-            width: "100px"
+            width: "100px",
+            
+
         }
 
+        let img_prop = {
+            widht:"100%",
+            objectFit:"cover",
+           
+                }
+
+
         return (<>
-        <div className="col-md-5 ml-3">
+        <div className="col-md-5">
                 <div className="row">
                     <div className="card col-md-12">
-                        <div className="card-body" >
-                            <img src={this.props.image.image_uri} alt="Logo" />
+                        <div className="card-body" style={{overflowX:"hidden"}}>
+                            <img src={this.props.image.image_uri} alt="Logo" style={img_prop}/>
                             {this.state.renderedImageInput}
                         </div>
                     </div>
@@ -162,8 +171,8 @@ export default class ToolInput extends Component {
                 {/* /.card-body */}
             </div>
 
-            <div className="col-md-3 ml-3">
-                <div className="row">
+            <div className="col-md-3">
+                <div className="">
                     <div className="card col-md-12" style={{ height: "570px" }}>
                         <div className="card-header text-center">
                             <h4 style={{fontWeight:900}}>Input</h4>
